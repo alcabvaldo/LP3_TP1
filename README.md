@@ -6,3 +6,7 @@ Integrantes:
   - Aramí Nuñez Scolari: [@aranuzco](https://github.com/aranusco)
   - Ivan Weiss Van Der Pol: [@IvanWeissPol](https://github.com/IvanWeissPol)
  
+Distribución:
+Alejandro | Aramí | Ivan 
+--- | --- | --- 
+1 | 2.2 | 2.3 
