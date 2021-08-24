@@ -9,15 +9,16 @@ stdout or stderr), and exit the program with EXIT_CODE. Does not
 return. */
 void print_usage (FILE* stream, int exit_code)
 {
-fprintf (stream, "Usage: %s options [ inputfile .... ]\n", program_name);
-fprintf (stream,
-" -h --help
-Display this usage information.\n"
-" -o --output filename Write output to file.\n"
-" -v --verbose
-Print verbose messages.\n");
-exit (exit_code);
+    fprintf (stream, "Usage: %s options [ inputfile .... ]\n", program_name);
+    fprintf (stream,
+    " -h --help
+    Display this usage information.\n"
+    " -o --output filename Write output to file.\n"
+    " -v --verbose
+    Print verbose messages.\n");
+    exit (exit_code);
 }
+// Este comentario es de prueba.
 /* Main program entry point. ARGC contains number of argument list
 elements; ARGV is an array of pointers to them. */
 int main (int argc, char* argv[])
