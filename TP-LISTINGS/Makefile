@@ -9,7 +9,7 @@ listing-2.1 : src/capitulo_2/2.1/arglist.c
 	mkdir -p bin/capitulo_2/2.1/ 
 	g++ src/capitulo_2/2.1/arglist.c -o bin/capitulo_2/2.1/arglist.o
 
-
+listing-2.2 : src/capitulo_2/2.2/getopt_long.c
 
 all: 
 	listing-1.1
