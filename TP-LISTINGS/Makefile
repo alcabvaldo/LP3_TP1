@@ -11,6 +11,10 @@ listing-2.1 : src/capitulo_2/2.1/arglist.c
 
 listing-2.2 : src/capitulo_2/2.2/getopt_long.c
 
+listing-2.3 : src/capitulo_2/2.3/print-env.c
+	mkdir -p bin/capitulo_2/2.3/
+	g++ src/capitulo_2/2.3/print-env.c -o bin/capitulo_2/2.3/print-env.o
+
 all: 
 	listing-1.1
 
