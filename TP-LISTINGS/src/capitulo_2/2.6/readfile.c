@@ -4,6 +4,7 @@
 #include <sys/types.h> 
 #include <unistd.h> 
 #include <cstdio>
+#include <string.h>
 
 char* read_from_file (const char* filename, size_t length) 
 { 
@@ -33,6 +34,8 @@ char* read_from_file (const char* filename, size_t length)
         return NULL; 
     } 
 
+    buffer[length] =  '\0';
+
     /* Everything's fine. Close the file and return the buffer. */ 
     close (fd); 
     return buffer; 
@@ -41,17 +44,33 @@ char* read_from_file (const char* filename, size_t length)
 
 
 
+//crea archivo con numeros 
+int crear_archivo_prueba (char* filename){
+    FILE* fp = fopen( filename, "w" );
+    int i;
+    for (i=0; i<10;i++){
+        fprintf(fp,"%d",i);
+    }
+    fclose(fp);
+    return i;
+}
+
+
+
+
+
+
 //añadido para probar el código
 int main(){
-
+    //printf("Holaaaa\n");
     //creo un archivo y cargo un int para realizar la prueba
-    char filename[] = "archivo";
-    int numero = 123456;
-    FILE *fp = fopen( filename, "w" );
-    fprintf(fp,"%d",numero);
+    char filename[] = "archivo.txt";
 
-    char* buffer = read_from_file (filename,sizeof(int)); 
-    printf("%d",atoi(buffer));
+    int leng = crear_archivo_prueba(filename);
+
+    char* buffer = read_from_file (filename,leng); 
+    printf("se leyó el erchivo sin problemas y el buffer es: %s\n",buffer);
 
     return 0;
 }
+
