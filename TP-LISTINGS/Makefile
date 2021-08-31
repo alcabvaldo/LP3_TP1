@@ -24,6 +24,11 @@ listing-2.6 : src/capitulo_2/2.6/readfile.c
 	mkdir -p bin/capitulo_2/2.6/ 
 	g++ src/capitulo_2/2.6/readfile.c -o bin/capitulo_2/2.6/readfile.o
 
+
+listing-3.3 : src/capitulo_3/3.3/fork.c
+	mkdir -p bin/capitulo_3/3.3/ 
+	g++ src/capitulo_3/3.3/fork.c -o bin/capitulo_3/3.3/fork.c
+
 all: 
 	listing-1.1
 

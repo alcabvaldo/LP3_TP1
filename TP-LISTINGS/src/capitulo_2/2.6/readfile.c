@@ -44,7 +44,7 @@ char* read_from_file (const char* filename, size_t length)
 
 
 
-//crea archivo con numeros 
+//crea archivo con 10 numeros, retorna length
 int crear_archivo_prueba (char* filename){
     FILE* fp = fopen( filename, "w" );
     int i;
