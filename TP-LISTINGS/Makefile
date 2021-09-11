@@ -47,7 +47,9 @@ listing-3.3 : src/capitulo_3/3.3/fork.c
 	mkdir -p bin/capitulo_3/3.3/ 
 	g++ src/capitulo_3/3.3/fork.c -o bin/capitulo_3/3.3/fork.c
 	
-listing-3.4 : 
+listing-3.4 : src/capitulo_3/3.4/fork-exec.c 
+	mkdir -p bin/capitulo_3/3.4/
+	gcc src/capitulo_3/3.4/fork-exec.c -o bin/capitulo_3/3.4/fork-exec.o
 
 listing-3.5 : src/capitulo_2/3.5/sigusr1.c
 	mkdir -p bin/capitulo_2/3.5/
@@ -59,9 +61,9 @@ listing-3.7 :
 
 ############################
 
-listing-4.1 : src/capitulo_2/4.1/thread-create.c
-	mkdir -p bin/capitulo_2/4.1/
-	g++ src/capitulo_2/4.1/thread-create.c -o bin/capitulo_2/4.1/thread-create.o -lpthread
+listing-4.1 : src/capitulo_4/4.1/thread-create.c
+	mkdir -p bin/capitulo_4/4.1/
+	g++ src/capitulo_4/4.1/thread-create.c -o bin/capitulo_4/4.1/thread-create.o -lpthread
 
 listing-4.2 : src/capitulo_2/4.2/pthread_create.c
 	mkdir -p bin/capitulo_2/4.2/
