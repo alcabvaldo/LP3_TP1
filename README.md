@@ -8,6 +8,7 @@ Integrantes:
   - Ivan Weiss Van Der Pol: [@IvanWeissPol](https://github.com/IvanWeissPol)
  
 Distribución Listings:
+
 Alejandro	|	Aramí	|	Ivan	|	Roberto
 ---	|	---	|	---	|	---
 1	|	2.2	|	2.3	|	2.4
