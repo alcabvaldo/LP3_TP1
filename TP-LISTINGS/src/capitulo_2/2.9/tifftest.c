@@ -5,11 +5,11 @@ int main(int argc, char** argv){
     TIFF* tiff;
     tiff = TIFFOpen (argv[1], "r");
     if(tiff){
-        fprintf("Archivo encontrado");
+        printf("Archivo encontrado");
     }
     else
     {
-        fprintf("No encontrado");
+        printf("No encontrado");
     }
 
     TIFFClose (tiff);
