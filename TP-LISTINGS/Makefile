@@ -23,7 +23,9 @@ listing-2.3 : src/capitulo_2/2.3/print-env.c
 
 listing-2.4 :
 
-listing-2.5 :
+listing-2.5 :src/capitulo_2/2.5/temp_file.c
+	mkdir -p bin/capitulo_2/2.5/
+	gcc src/capitulo_2/2.5/temp_file.c -o bin/capitulo_2/2.5/temp_file.o
 
 listing-2.6 : src/capitulo_2/2.6/readfile.c
 	mkdir -p bin/capitulo_2/2.6/ 
@@ -35,7 +37,9 @@ listing-2.7 : src/capitulo_2/2.7/app.c
 	
 listing-2.8 : listing-2.7
 
-listing-2.9 : 
+listing-2.9 : src/capitulo_2/2.9/tifftest.c
+	mkdir -p bin/capitulo_2/2.9/
+	gcc src/capitulo_2/2.9/tifftest.c -o bin/capitulo_2/2.9/tifftest.o -ltiff
 
 #########################
 
