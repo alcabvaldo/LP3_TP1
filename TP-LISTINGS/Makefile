@@ -95,7 +95,10 @@ listing-4.11 :
 	
 listing-4.12 :
 	
-listing-4.13 :
+listing-4.13 : src/capitulo_4/4.13/spin-condvar.c
+	mkdir -p bin/capitulo_4/4.13/
+	gcc src/capitulo_4/4.13/spin-condvar.c -o bin/capitulo_4/4.13/spin-condvar.o -lpthread
+	
 
 listing-4.14 : src/capitulo_2/4.14/condvar.c
 	mkdir -p bin/capitulo_2/4.14/
