@@ -55,7 +55,9 @@ int main(){
   printf("Activando flag\n");
   sleep(1);
   set_thread_flag(1);
-  
+  sleep(1);
+  set_thread_flag(0);
+  printf("Desactivo flag\n");
   sleep(1);
   return 0;
 }
