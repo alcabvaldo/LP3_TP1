@@ -1,6 +1,8 @@
 #include <sys/ipc.h>  
 #include <sys/sem.h>  
-#include <sys/types.h>  
+#include <sys/types.h>
+#include <stdio.h>
+
 #define KEY 1000
 /* We must define union semun ourselves. */  
  
@@ -32,13 +34,13 @@ int main(){
     int nroSem = binary_semaphore_allocation(KEY, IPC_CREAT); 
     int deall;
     if (nroSem != -1 ){
-        printf("Allocation posible, sem Nro %d", nroSem);
+        printf("Allocation posible, sem Nro %d\n", nroSem);
         deall = binary_semaphore_deallocate(nroSem);
         if(deall == -1 )
-            printf("No sepudo desallocar,sem nro %d", nroSem);
+            printf("No sepudo desallocar,sem nro %d\n", nroSem);
         else
-            printf("Desallocado con exitod, sem nro %d", nroSem);
+            printf("Desallocado con exitod, sem nro %d\n", nroSem);
     }
     else 
-        printf("Allocation imposible");
+        printf("Allocation imposible\n");
 }

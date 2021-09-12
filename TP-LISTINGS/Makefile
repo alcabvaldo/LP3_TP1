@@ -110,7 +110,9 @@ listing-4.15 :
 
 listing-5.1 :
 	
-listing-5.2 :
+listing-5.2 :src/capitulo_5/5.2/sem_all_deall.c
+	mkdir -p bin/capitulo_5/5.2/
+	gcc src/capitulo_5/5.2/sem_all_deall.c -o bin/capitulo_5/5.2/sem_all_deall.o
 
 listing-5.3 : src/capitulo_2/5.3/sem_init.c
 	mkdir -p bin/capitulo_2/5.3/
