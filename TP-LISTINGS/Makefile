@@ -17,7 +17,7 @@ listing-2.2 :
 
 listing-2.3 : src/capitulo_2/2.3/print-env.c
 	mkdir -p bin/capitulo_2/2.3/
-	g++ src/capitulo_2/2.3/print-env.c -o bin/capitulo_2/2.3/print-env.o
+	g++ src/capitulo_2/2.3/print-env.c -o bin/capitulo_2/2.3/print-env.c
 
 listing-2.4 :
 
@@ -29,7 +29,7 @@ listing-2.6 : src/capitulo_2/2.6/readfile.c
 
 listing-2.7 : src/capitulo_2/2.7/app.c
 	mkdir -p bin/capitulo_2/2.7/
-	g++ src/capitulo_2/2.3/app-env.c -o bin/capitulo_2/2.7/app.o
+	g++ src/capitulo_2/2.7/app.c -o bin/capitulo_2/2.7/app.o
 	
 listing-2.8 : listing-2.7
 
@@ -63,23 +63,23 @@ listing-3.7 : src/capitulo_3/3.7/sigchld.c
 
 listing-4.1 : src/capitulo_4/4.1/thread-create.c
 	mkdir -p bin/capitulo_4/4.1/
-	g++ src/capitulo_4/4.1/thread-create.c -o bin/capitulo_4/4.1/thread-create.o -lpthread
+	gcc src/capitulo_4/4.1/thread-create.c -o bin/capitulo_4/4.1/thread-create.o -lpthread
 
 listing-4.2 : src/capitulo_4/4.2/pthread_create.c
 	mkdir -p bin/capitulo_4/4.2/
-	g++ src/capitulo_4/4.2/pthread_create.c -o bin/capitulo_4/4.2/pthread_create.o -lpthread
+	gcc src/capitulo_4/4.2/pthread_create.c -o bin/capitulo_4/4.2/pthread_create.o -lpthread
 	
 listing-4.3 :
 	
 listing-4.4 : src/capitulo_4/4.4/primes.c
 	mkdir -p bin/capitulo_4/4.4/
-	g++ src/capitulo_4/4.4/primes.c -o bin/capitulo_4/4.4/primes.o -lpthread
+	gcc src/capitulo_4/4.4/primes.c -o bin/capitulo_4/4.4/primes -lpthread
 	
 listing-4.5 :
 
 listing-4.6 : src/capitulo_4/4.6/critical-section.c
 	mkdir -p bin/capitulo_4/4.6/
-	g++ src/capitulo_4/4.6/critical-section.c -o bin/capitulo_4/4.6/critical-section.o
+	gcc src/capitulo_4/4.6/critical-section.c -o bin/capitulo_4/4.6/critical-section.o
 	
 listing-4.7 :
 	
@@ -97,7 +97,7 @@ listing-4.13 :
 
 listing-4.14 : src/capitulo_4/4.14/condvar.c
 	mkdir -p bin/capitulo_4/4.14/
-	g++ src/capitulo_4/4.14/condvar.c -o bin/capitulo_4/4.14/condvar.o -lpthread
+	gcc src/capitulo_4/4.14/condvar.c -o bin/capitulo_4/4.14/condvar.o -lpthread
 	
 listing-4.15 :
 	
@@ -109,7 +109,7 @@ listing-5.2 :
 
 listing-5.3 : src/capitulo_5/5.3/sem_init.c
 	mkdir -p bin/capitulo_5/5.3/
-	g++ src/capitulo_5/5.3/sem_init.c -o bin/capitulo_5/5.3/sem_init.o
+	gcc src/capitulo_5/5.3/sem_init.c -o bin/capitulo_5/5.3/sem_init.o
 	
 listing-5.4 :
 	
@@ -119,7 +119,7 @@ listing-5.6 :
 
 listing-5.7 : src/capitulo_5/5.7/pipe.c
 	mkdir -p bin/capitulo_5/5.7/
-	g++ src/capitulo_5/5.7/pipe.c -o bin/capitulo_5/5.7/pipe.o
+	gcc src/capitulo_5/5.7/pipe.c -o bin/capitulo_5/5.7/pipe.o
 	
 listing-5.8 :
 	
@@ -129,7 +129,7 @@ listing-5.10 :
 
 listing-5.11 : src/capitulo_5/5.11/socket-client.c
 	mkdir -p bin/capitulo_5/5.11/
-	g++ src/capitulo_5/5.11/socket-client.c -o bin/capitulo_5/5.11/socket-client.o
+	gcc src/capitulo_5/5.11/socket-client.c -o bin/capitulo_5/5.11/socket-client.o
 	
 listing-5.12 :
 
