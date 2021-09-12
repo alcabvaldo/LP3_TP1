@@ -85,7 +85,9 @@ listing-4.7 :
 	
 listing-4.8 :
 	
-listing-4.9 :
+listing-4.9 : src/capitulo_4/4.9/cxx-exit.cpp 
+	mkdir -p bin/capitulo_4/4.9/
+	g++ src/capitulo_4/4.5/cxx-exit.cpp -o bin/capitulo_4/4.5/cxx-exit.o -lpthread
 	
 listing-4.10 :
 	
