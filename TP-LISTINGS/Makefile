@@ -71,7 +71,9 @@ listing-4.2 : src/capitulo_4/4.2/pthread_create.c
 	
 listing-4.3 :
 	
-listing-4.4 :
+listing-4.4 : src/capitulo_4/4.4/primes.c
+	mkdir -p bin/capitulo_4/4.4/
+	g++ src/capitulo_4/4.4/primes.c -o bin/capitulo_4/4.4/primes.o -lpthread
 	
 listing-4.5 :
 
