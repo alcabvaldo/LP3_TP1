@@ -73,7 +73,9 @@ listing-4.3 :
 	
 listing-4.4 :
 	
-listing-4.5 :
+listing-4.5 : src/capitulo_4/4.5/detached.c 
+	mkdir -p bin/capitulo_4/4.5/
+	gcc src/capitulo_4/4.5/detached.c -o bin/capitulo_4/4.5/detached.o -lpthread
 
 listing-4.6 : src/capitulo_2/4.6/critical-section.c
 	mkdir -p bin/capitulo_2/4.6/
