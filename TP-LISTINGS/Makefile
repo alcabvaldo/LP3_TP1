@@ -134,7 +134,9 @@ listing-5.8 :
 	
 listing-5.9 :
 	
-listing-5.10 :
+listing-5.10 :src/capitulo_5/5.10/socket-server.c
+	mkdir -p bin/capitulo_5/5.10/
+	gcc src/capitulo_5/5.10/socket-server.c -o bin/capitulo_5/5.10/socket-server.o
 
 listing-5.11 : src/capitulo_2/5.11/socket-client.c
 	mkdir -p bin/capitulo_2/5.11/
