@@ -62,7 +62,6 @@ int crear_archivo_prueba (char* filename){
 
 //añadido para probar el código
 int main(){
-    //printf("Holaaaa\n");
     //creo un archivo y cargo un int para realizar la prueba
     char filename[] = "archivo.txt";
 

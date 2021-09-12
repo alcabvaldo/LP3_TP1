@@ -27,6 +27,7 @@ void* compute_prime (void* arg)
     return NULL; 
 } 
 
+//le pasa la variable prime a pthread_join, y en esta se carga el return
 
 int main () 
 { 
