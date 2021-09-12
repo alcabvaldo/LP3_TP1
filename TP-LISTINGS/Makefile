@@ -122,7 +122,9 @@ listing-5.4 :
 	
 listing-5.5 :
 	
-listing-5.6 :
+listing-5.6 :src/capitulo_5/5.6/mmap-read.c
+	mkdir -p bin/capitulo_5/5.6/
+	gcc  -o bin/capitulo_5/5.6/mmap-reads src/capitulo_5/5.6/mmap-read.c
 
 listing-5.7 : src/capitulo_2/5.7/pipe.c
 	mkdir -p bin/capitulo_2/5.7/
