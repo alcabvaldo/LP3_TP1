@@ -34,7 +34,7 @@ void  do_some_work  ()
 { 
   while  (1)  { 
     /*  Do  some  useful  things  here...  */  
-    printf("Estoy trabajando");
+    printf("Estoy trabajando\n");
     if  (should_exit_thread_immediately())  
       throw  ThreadExitException  (/*  thread's  return  value  =  */ NULL);  
   }  
@@ -56,10 +56,10 @@ int main(){
     pthread_t thread;
     
     pthread_create(&thread, NULL, &thread_function, NULL);
-    //dormir despues de 10 seg y parar 
-    sleep(10);
-    printf("PARAR!!!");
+    //dormir despues de 1, parar 
+    sleep(1);
     valor = true; 
-    
+    printf("PARAR!!!");
+
     return 0; 
 }
