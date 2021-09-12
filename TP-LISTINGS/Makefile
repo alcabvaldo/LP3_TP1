@@ -37,9 +37,7 @@ listing-2.7 : src/capitulo_2/2.7/app.c
 	
 listing-2.8 : listing-2.7
 
-listing-2.9 : src/capitulo_2/2.9/tifftest.c
-	mkdir -p bin/capitulo_2/2.9/
-	gcc src/capitulo_2/2.9/tifftest.c -o bin/capitulo_2/2.9/tifftest.o -ltiff
+listing-2.9 :
 
 #########################
 

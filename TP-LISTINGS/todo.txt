@@ -8,6 +8,11 @@ ale
         5.5
 
     makefile:
+        2.9
+         src/capitulo_2/2.9/tifftest.c
+	mkdir -p bin/capitulo_2/2.9/
+	gcc src/capitulo_2/2.9/tifftest.c -o bin/capitulo_2/2.9/tifftest.o -ltiff
+
         4.6 
         src/capitulo_4/4.6/critical-section.c
 	mkdir -p bin/capitulo_4/4.6/
