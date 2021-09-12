@@ -71,11 +71,7 @@ listing-3.7 : src/capitulo_3/3.7/sigchld.c
 
 listing-4.1 : src/capitulo_4/4.1/thread-create.c
 	mkdir -p bin/capitulo_4/4.1/
-<<<<<<< HEAD
 	gcc src/capitulo_4/4.1/thread-create.c -o bin/capitulo_4/4.1/thread-create.o -lpthread
-=======
-	g++ src/capitulo_4/4.1/thread-create.c -o bin/capitulo_4/4.1/thread-create.o -lpthread
->>>>>>> origin/main
 
 listing-4.2 : src/capitulo_4/4.2/pthread_create.c
 	mkdir -p bin/capitulo_4/4.2/
