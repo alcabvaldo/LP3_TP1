@@ -1,1 +1,24 @@
 ver que onda con 5.10
+
+ale
+    completar: 
+        3.7
+        4.8
+        4.12
+        5.5
+
+    makefile:
+        4.6 
+        src/capitulo_4/4.6/critical-section.c
+	mkdir -p bin/capitulo_4/4.6/
+	gcc src/capitulo_4/4.6/critical-section.c -o bin/capitulo_4/4.6/critical-section.o -lpthread
+
+        4.8
+         src/capitulo_4/4.8/cleanup.c
+	mkdir -p bin/capitulo_4/4.8/
+	gcc src/capitulo_4/4.8/cleanup.c -o bin/capitulo_4/4.8/cleanup.o -lpthread
+
+        4.12
+         src/capitulo_4/4.12/job-queue3.c
+	mkdir -p bin/capitulo_4/4.12/
+	gcc src/capitulo_4/4.12/job-queue3.c -o bin/capitulo_4/4.12/job-queue3.o -lpthread

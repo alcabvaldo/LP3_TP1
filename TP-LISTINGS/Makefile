@@ -77,9 +77,7 @@ listing-4.4 : src/capitulo_4/4.4/primes.c
 	
 listing-4.5 :
 
-listing-4.6 : src/capitulo_4/4.6/critical-section.c
-	mkdir -p bin/capitulo_4/4.6/
-	gcc src/capitulo_4/4.6/critical-section.c -o bin/capitulo_4/4.6/critical-section.o
+listing-4.6 :
 	
 listing-4.7 :
 	
@@ -103,7 +101,9 @@ listing-4.15 :
 	
 #############################
 
-listing-5.1 :
+listing-5.1 : src/capitulo_5/5.1/shm.c
+	mkdir -p bin/capitulo_5/5.1/
+	gcc src/capitulo_5/5.1/shm.c -o bin/capitulo_5/5.1/shm.o
 	
 listing-5.2 :
 
@@ -113,7 +113,9 @@ listing-5.3 : src/capitulo_5/5.3/sem_init.c
 	
 listing-5.4 :
 	
-listing-5.5 :
+listing-5.5 : src/capitulo_5/5.5/mmap-write.c
+	mkdir -p bin/capitulo_5/5.5/
+	gcc src/capitulo_5/5.5/mmap-write.c -o bin/capitulo_5/5.5/mmap-write.o
 	
 listing-5.6 :
 
@@ -123,7 +125,9 @@ listing-5.7 : src/capitulo_5/5.7/pipe.c
 	
 listing-5.8 :
 	
-listing-5.9 :
+listing-5.9 : src/capitulo_5/5.9/popen.c
+	mkdir -p bin/capitulo_5/5.9/
+	gcc src/capitulo_5/5.9/popen.c -o bin/capitulo_5/5.9/popen.o
 	
 listing-5.10 :
 
