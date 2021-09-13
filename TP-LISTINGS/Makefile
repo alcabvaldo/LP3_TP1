@@ -115,7 +115,9 @@ listing-4.11 :src/capitulo_4/4.11/job-queue2.c
 	mkdir -p bin/capitulo_4/4.11/ 
 	cc  -o  bin/capitulo_4/4.11/job-queue2  src/capitulo_4/4.11/job-queue2.c  -lpthread
 	
-listing-4.12 :
+listing-4.12 : src/capitulo_4/4.12/job-queue3.c
+	mkdir -p bin/capitulo_4/4.12/
+	gcc src/capitulo_4/4.12/job-queue3.c -o bin/capitulo_4/4.12/job-queue3.o -lpthread
 	
 listing-4.13 : src/capitulo_4/4.13/spin-condvar.c
 	mkdir -p bin/capitulo_4/4.13/
