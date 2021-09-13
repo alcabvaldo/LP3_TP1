@@ -16,8 +16,16 @@ int random_range (unsigned const low, unsigned const high)
 } 
 
 
-int main (int argc, char* const argv[]) 
-{ 
+int main (int argc, char **argv) 
+{     
+    char str[] = "file";
+    char* nombre;
+    if (argc>1){
+        nombre = argv[1];
+    }else{
+        nombre = str;
+    }
+
     int fd; 
     void* file_memory; 
 
@@ -25,7 +33,7 @@ int main (int argc, char* const argv[])
     srand (time (NULL)); 
 
     /* Prepare a file large enough to hold an unsigned integer. */ 
-    fd = open (argv[1], O_RDWR | O_CREAT, S_IRUSR | S_IWUSR); 
+    fd = open (nombre, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR); 
     lseek (fd, FILE_LENGTH+1, SEEK_SET); 
     write (fd, "", 1); 
     lseek (fd, 0, SEEK_SET); 
@@ -40,5 +48,8 @@ int main (int argc, char* const argv[])
 
     /* Release the memory (unnecessary because the program exits). */ 
     munmap (file_memory, FILE_LENGTH); 
+
+    printf("Se cargo un numero random en el archivo mapeado: %s\n",nombre);
+
     return 0; 
 } 

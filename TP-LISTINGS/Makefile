@@ -130,7 +130,7 @@ listing-5.4 :
 	
 listing-5.5 : src/capitulo_5/5.5/mmap-write.c
 	mkdir -p bin/capitulo_5/5.5/
-	gcc src/capitulo_5/5.5/mmap-write.c -o bin/capitulo_5/5.5/mmap-write.o
+	g++ src/capitulo_5/5.5/mmap-write.c -o bin/capitulo_5/5.5/mmap-write.o
 	
 listing-5.6 :src/capitulo_5/5.6/mmap-read.c
 	mkdir -p bin/capitulo_5/5.6/
