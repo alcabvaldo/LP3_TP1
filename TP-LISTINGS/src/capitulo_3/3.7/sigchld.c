@@ -12,10 +12,9 @@ sig_atomic_t child_exit_status;
 
 void clean_up_child_process (int signal_number) 
 { 
-    printf("yo entre aca wtf");
     /* Clean up the child process. */ 
     int status; 
-    wait (&status); 
+    wait (&status); //no entiendo que pasa acá
     /* Store its exit status in a global variable. */ 
     child_exit_status = status; 
 } 
@@ -38,13 +37,17 @@ int main ()
     child_pid = fork () ; 
     if (child_pid != 0) {
         printf ("this is the parent process, with id %d\n", (int) getpid ()); 
-        printf ("the child's process ID is %d\n",(int) child_pid ); 
+        printf ("the child's process ID is %d\n",(int) child_pid );
+        sleep(8); //esperar a que el hijo termine 
+        clean_up_child_process(1);
     } 
     else{
         //while(1) 
-            printf ("this is the child process, with id %d\n", (int) getpid ()); 
+            printf ("this is the child process, with id %d\n", (int) getpid ());
+            return 420; 
     }
     //clean_up_child_process
+    printf("Proceso hijo termino con exit = %d\n", child_exit_status);
 
     return 0; 
 } 
