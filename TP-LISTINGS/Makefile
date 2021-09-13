@@ -25,7 +25,6 @@ listing-2.4 : src/capitulo_2/2.4/client.c
 	mkdir -p bin/capitulo_2/2.4/
 	cc  -o bin/capitulo_2/2.4/client src/capitulo_2/2.4/client.c
 
-<<<<<<< HEAD
 listing-2.5 :src/capitulo_2/2.5/temp_file.c
 	mkdir -p bin/capitulo_2/2.5/
 	gcc src/capitulo_2/2.5/temp_file.c -o bin/capitulo_2/2.5/temp_file.o
@@ -66,14 +65,6 @@ listing-3.5 : src/capitulo_3/3.5/sigusr1.c
 	
 listing-3.6 : src/capitulo_3/3.6/zombie.c
 	mkdir -p bin/capitulo_3/3.6/zombie.c
-=======
-listing-3.2: src/capitulo_3/3.2/system.c
-	mkdir -p bin/capitulo_3/3.2/
-	cc  -o bin/capitulo_3/3.2/system src/capitulo_3/3.2/system.c
-
-listing-3.6: src/capitulo_3/3.6/zombie.c
-	mkdir -p bin/capitulo_3/3.6/
->>>>>>> origin/foneca
 	cc  -o bin/capitulo_3/3.6/zombie src/capitulo_3/3.6/zombie.c
 	
 listing-3.7 : src/capitulo_3/3.7/sigchld.c
