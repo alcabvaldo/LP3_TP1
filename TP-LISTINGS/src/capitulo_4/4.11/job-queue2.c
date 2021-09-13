@@ -40,9 +40,23 @@ void* thread_function (void* arg)
                break;  
  
          /* Carry out the work.  */  
-         process_job (next_job);  
+         //process_job (next_job);
+         printf("Carry out the work");  
          /* Clean  up.  */  
          free (next_job);  
    }  
    return NULL;  
+}
+
+int main(){
+	int i = 0;
+	for(i = 0; i < 10; i++){
+		struct job *x = (struct job*) malloc(sizeof(struct job));
+		x->next = job_queue;
+		job_queue = x;	
+	}
+	pthread_t thread1;
+	pthread_create(&thread1, NULL, &thread_function, NULL);
+	pthread_join(thread1, NULL);
+	return 0;
 }

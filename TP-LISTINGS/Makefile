@@ -25,6 +25,7 @@ listing-2.4 : src/capitulo_2/2.4/client.c
 	mkdir -p bin/capitulo_2/2.4/
 	cc  -o bin/capitulo_2/2.4/client src/capitulo_2/2.4/client.c
 
+<<<<<<< HEAD
 listing-2.5 :src/capitulo_2/2.5/temp_file.c
 	mkdir -p bin/capitulo_2/2.5/
 	gcc src/capitulo_2/2.5/temp_file.c -o bin/capitulo_2/2.5/temp_file.o
@@ -65,6 +66,14 @@ listing-3.5 : src/capitulo_3/3.5/sigusr1.c
 	
 listing-3.6 : src/capitulo_3/3.6/zombie.c
 	mkdir -p bin/capitulo_3/3.6/zombie.c
+=======
+listing-3.2: src/capitulo_3/3.2/system.c
+	mkdir -p bin/capitulo_3/3.2/
+	cc  -o bin/capitulo_3/3.2/system src/capitulo_3/3.2/system.c
+
+listing-3.6: src/capitulo_3/3.6/zombie.c
+	mkdir -p bin/capitulo_3/3.6/
+>>>>>>> origin/foneca
 	cc  -o bin/capitulo_3/3.6/zombie src/capitulo_3/3.6/zombie.c
 	
 listing-3.7 : src/capitulo_3/3.7/sigchld.c
@@ -107,20 +116,21 @@ listing-4.9 : src/capitulo_4/4.9/cxx-exit.cpp
 	
 listing-4.10 :
 	
-listing-4.11 :
+listing-4.11 :src/capitulo_4/4.11/job-queue2.c
+	mkdir -p bin/capitulo_4/4.11/ 
+	cc  -o  bin/capitulo_4/4.11/job-queue2  src/capitulo_4/4.11/job-queue2.c  -lpthread
 	
 listing-4.12 :
 	
 listing-4.13 : src/capitulo_4/4.13/spin-condvar.c
 	mkdir -p bin/capitulo_4/4.13/
 	gcc src/capitulo_4/4.13/spin-condvar.c -o bin/capitulo_4/4.13/spin-condvar.o -lpthread
-	
 
 listing-4.14 : src/capitulo_4/4.14/condvar.c
 	mkdir -p bin/capitulo_4/4.14/
 	gcc src/capitulo_4/4.14/condvar.c -o bin/capitulo_4/4.14/condvar.o -lpthread
-	
-listing-4.15 : src/capitulo_4/4.15/thread-pid.c
+
+listing-4.15: src/capitulo_4/4.15/thread-pid.c
 	mkdir -p bin/capitulo_4/4.15/ 
 	cc  -o  bin/capitulo_4/4.15/thread-pid  src/capitulo_4/4.15/thread-pid.c  -lpthread
 	
@@ -172,5 +182,21 @@ listing-5.12 :
 
 all : listing-1.1 listing-2.1 listing-2.2 listing-2.3 listing-2.4 listing-2.5 listing-2.6 listing-2.7 listing-2.9 listing-3.1 listing-3.2 listing-3.3 listing-3.4 listing-3.5 listing-3.6 listing-3.7 listing-4.1 listing-4.2 listing-4.3 listing-4.4 listing-4.5 listing-4.6 listing-4.7 listing-4.8 listing-4.9 listing-4.10 listing-4.11 listing-4.12 listing-4.13 listing-4.14 listing-4.15 listing-5.1 listing-5.2 listing-5.3 listing-5.4 listing-5.5 listing-5.6 listing-5.7 listing-5.8 listing-5.9 listing-5.10 listing-5.11 listing-5.12
 
+<<<<<<< HEAD
+=======
+listing-5.4: src/capitulo_5/5.4/sem_pv.c
+	mkdir -p bin/capitulo_5/5.4/
+	cc  -o  bin/capitulo_5/5.4/sem_pv  src/capitulo_5/5.4/sem_pv.c
+
+listing-5.8: src/capitulo_5/5.8/dup2.c
+	mkdir -p bin/capitulo_5/5.8/
+	cc  -o  bin/capitulo_5/5.8/dup2  src/capitulo_5/5.8/dup2.c
+
+listing-5.12: src/capitulo_5/5.12/socket-inet.c
+	mkdir -p bin/capitulo_5/5.12/
+	cc  -o  bin/capitulo_5/5.12/socket-inet src/capitulo_5/5.12/socket-inet.c
+
+all: listing-2.4 listing-3.2 listing-3.6 listing-4.3 listing-4.7 listing-4.15 listing-4.11 listing-5.4 listing-5.8 listing-5.12
+>>>>>>> origin/foneca
 clean: 
 	rm -rf bin
