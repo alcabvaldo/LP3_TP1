@@ -43,7 +43,6 @@ void do_some_work ()
 int main(void) {
     srand(time(NULL)); //seed nueva
     
-    //tenemos tantos thread como elementos en producto[][]
     int num_de_threads = 5;
     pthread_t thread_id[num_de_threads];
     printf("Se crean %d hilos\n",num_de_threads);
