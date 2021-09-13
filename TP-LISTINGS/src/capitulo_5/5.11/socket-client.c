@@ -25,7 +25,7 @@ int main (int argc, char* const argv[])
     name.sun_family = AF_LOCAL;
     strcpy (name.sun_path, socket_name);
     /* Connect the socket.*/
-    connect (socket_fd, &name, SUN_LEN (&name));
+    connect (socket_fd, (struct sockaddr *)&name, SUN_LEN (&name));
     /* Write the text on the command line to the socket.*/
     write_text (socket_fd, message);
     close (socket_fd);

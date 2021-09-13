@@ -41,7 +41,7 @@ int main (int argc, char* const argv[])
     /* Indicate that this is a server. */
     name.sun_family = AF_LOCAL;
     strcpy (name.sun_path, socket_name);
-    bind (socket_fd, &name, SUN_LEN (&name));
+    bind (socket_fd, (struct sockaddr *)&name, SUN_LEN (&name));
     /* Listen for connections. */
     listen (socket_fd, 5);
     
@@ -53,7 +53,7 @@ int main (int argc, char* const argv[])
         socklen_t client_name_len;
         int client_socket_fd;
         /* Accept a connection. */
-        client_socket_fd = accept (socket_fd, &client_name, &client_name_len);
+        client_socket_fd = accept (socket_fd, (struct sockaddr *)&client_name, &client_name_len);
         /* Handle the connection. */
         client_sent_quit_message = server (client_socket_fd);
         /* Close our end of the connection. */
