@@ -2,10 +2,10 @@ ver que onda con 5.10
 
 ale
     completar: 
-        3.7
+        3.7 <quedara asi>
         4.8
         4.12
-        5.5
+        5.5 (done)
 
     makefile:
         2.9

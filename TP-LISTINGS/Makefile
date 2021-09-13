@@ -89,7 +89,9 @@ listing-4.6 :
 	
 listing-4.7 :
 	
-listing-4.8 :
+listing-4.8 :src/capitulo_4/4.8/cleanup.c
+	mkdir -p bin/capitulo_4/4.8/
+	gcc src/capitulo_4/4.8/cleanup.c -o bin/capitulo_4/4.8/cleanup.o -lpthread
 	
 listing-4.9 : src/capitulo_4/4.9/cxx-exit.cpp 
 	mkdir -p bin/capitulo_4/4.9/
