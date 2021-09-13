@@ -21,7 +21,9 @@ listing-2.3 : src/capitulo_2/2.3/print-env.c
 	mkdir -p bin/capitulo_2/2.3/
 	g++ src/capitulo_2/2.3/print-env.c -o bin/capitulo_2/2.3/print-env.c
 
-listing-2.4 :
+listing-2.4 : src/capitulo_2/2.4/client.c
+	mkdir -p bin/capitulo_2/2.4/
+	cc  -o bin/capitulo_2/2.4/client src/capitulo_2/2.4/client.c
 
 listing-2.5 :src/capitulo_2/2.5/temp_file.c
 	mkdir -p bin/capitulo_2/2.5/
@@ -45,7 +47,9 @@ listing-3.1 : src/capitulo_3/3.1/print-pid.c
 	mkdir -p bin/capitulo_3/3.1/
 	g++ src/capitulo_3/3.1/print-pid.c -o bin/capitulo_3/3.1/print-pid.o
 	
-listing-3.2 :
+listing-3.2 : src/capitulo_3/3.2/system.c
+	mkdir -p bin/capitulo_3/3.2/system.c
+	cc  -o bin/capitulo_3/3.2/system src/capitulo_3/3.2/system.c
 
 listing-3.3 : src/capitulo_3/3.3/fork.c
 	mkdir -p bin/capitulo_3/3.3/ 
@@ -59,7 +63,9 @@ listing-3.5 : src/capitulo_3/3.5/sigusr1.c
 	mkdir -p bin/capitulo_3/3.5/
 	g++ src/capitulo_3/3.5/sigusr1.c -o bin/capitulo_3/3.5/sigusr1.o
 	
-listing-3.6 :
+listing-3.6 : src/capitulo_3/3.6/zombie.c
+	mkdir -p bin/capitulo_3/3.6/zombie.c
+	cc  -o bin/capitulo_3/3.6/zombie src/capitulo_3/3.6/zombie.c
 	
 listing-3.7 : src/capitulo_3/3.7/sigchld.c
 	mkdir -p bin/capitulo_3/3.7/
@@ -75,7 +81,9 @@ listing-4.2 : src/capitulo_4/4.2/pthread_create.c
 	mkdir -p bin/capitulo_4/4.2/
 	gcc src/capitulo_4/4.2/pthread_create.c -o bin/capitulo_4/4.2/pthread_create.o -lpthread
 	
-listing-4.3 :
+listing-4.3 : src/capitulo_4/4.3/thread-create2.c
+	mkdir -p bin/capitulo_4/4.3/ 
+	cc  -o  bin/capitulo_4/4.3/thread-create2  src/capitulo_4/4.3/thread-create2.c  -lpthread
 	
 listing-4.4 : src/capitulo_4/4.4/primes.c
 	mkdir -p bin/capitulo_4/4.4/
@@ -87,7 +95,9 @@ listing-4.5 : src/capitulo_4/4.5/detached.c
 
 listing-4.6 :
 	
-listing-4.7 :
+listing-4.7 : src/capitulo_4/4.7/tsd.c
+	mkdir -p bin/capitulo_4/4.7/ 
+	cc  -o  bin/capitulo_4/4.7/tsd  src/capitulo_4/4.7/tsd.c  -lpthread
 	
 listing-4.8 :
 	
@@ -110,7 +120,9 @@ listing-4.14 : src/capitulo_4/4.14/condvar.c
 	mkdir -p bin/capitulo_4/4.14/
 	gcc src/capitulo_4/4.14/condvar.c -o bin/capitulo_4/4.14/condvar.o -lpthread
 	
-listing-4.15 :
+listing-4.15 : src/capitulo_4/4.15/thread-pid.c
+	mkdir -p bin/capitulo_4/4.15/ 
+	cc  -o  bin/capitulo_4/4.15/thread-pid  src/capitulo_4/4.15/thread-pid.c  -lpthread
 	
 #############################
 
